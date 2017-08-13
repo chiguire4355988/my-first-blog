@@ -25,7 +25,7 @@ SECRET_KEY = 's3l_jl6k98wq7g$@oj&_im21l3flud_v4o9x$_&midc)_y1mhg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thunder21.pythonanywhere.com']
 
 
 # Application definition
