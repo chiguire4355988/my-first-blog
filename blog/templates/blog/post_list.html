@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Django Girls blog</title>
+    </head>
+    <body>
+    <div>
+        <h1><a href="/">Albert's Blog</a></h1>
+    </div>
+
+    {% for post in posts %}
+        <div>
+<!--            <p>Autor: {{ post.autor }}</p> -->
+            <p>Publicado: {{ post.fecha_publicacion }}    Autor: {{ post.autor }}</p>
+            <h2><a href="">{{ post.titulo }}</a></h2>
+            <p>{{ post.contenido|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+    </body>
+</html>
